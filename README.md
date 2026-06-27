@@ -25,6 +25,7 @@ public class Abhishek {
     String education   = "B.Tech CSE @ Amity University Jharkhand (2023–2027)";
 
     String[] currentWork = {
+        "🚂 RailConnect — full-stack railway booking platform (Spring Boot 3.4 + React 19 + MySQL + MongoDB + Redis)",
         "🏪 online-general-store — dual-frontend e-commerce platform (Spring Boot + React + MySQL)",
         "🌐 Personal Portfolio — React + Node.js + Express.js + MongoDB, deployed on Vercel",
         "🎓 AI-Based Exam System — real-time monitoring + automated grading (NTCC Project)",
@@ -55,9 +56,10 @@ public class Abhishek {
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ### 🔹 Frameworks & Libraries
-![Spring Boot](https://img.shields.io/badge/Spring_Boot_4-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot_3.4-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -65,6 +67,8 @@ public class Abhishek {
 ### 🔹 Databases & Tools
 ![MySQL](https://img.shields.io/badge/MySQL_8-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-0078d4?style=for-the-badge&logo=visual-studio-code&logoColor=white)
@@ -74,9 +78,10 @@ public class Abhishek {
 ### 🔹 Concepts
 ![REST API](https://img.shields.io/badge/REST_APIs-00d4ff?style=for-the-badge&logoColor=white)
 ![Full Stack](https://img.shields.io/badge/Full--Stack_Dev-0d1117?style=for-the-badge&logoColor=white)
+![JWT Auth](https://img.shields.io/badge/JWT_Auth-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Distributed Locking](https://img.shields.io/badge/Distributed_Locking-DC382D?style=for-the-badge&logoColor=white)
 ![POS Systems](https://img.shields.io/badge/POS_Systems-6DB33F?style=for-the-badge&logoColor=white)
 ![DBMS](https://img.shields.io/badge/DBMS-005C84?style=for-the-badge&logoColor=white)
-![OSI Model](https://img.shields.io/badge/OSI_Model-FF6C37?style=for-the-badge&logoColor=white)
 ![UI/UX Design](https://img.shields.io/badge/UI%2FUX_Design-FF5722?style=for-the-badge&logoColor=white)
 
 </div>
@@ -86,12 +91,25 @@ public class Abhishek {
 
 <div align="center">
 
+[![RailConnect](https://github-readme-stats.vercel.app/api/pin/?username=abhishek-dev27&repo=RailConnect&theme=tokyonight&border_color=00d4ff&title_color=00d4ff&icon_color=00d4ff)](https://github.com/abhishek-dev27/RailConnect)
 [![online-general-store](https://github-readme-stats.vercel.app/api/pin/?username=abhishek-dev27&repo=online-general-store&theme=tokyonight&border_color=00d4ff&title_color=00d4ff&icon_color=00d4ff)](https://github.com/abhishek-dev27/online-general-store)
 
 </div>
 
+### 🚂 RailConnect — Full-Stack Railway Booking Platform
+> **Spring Boot 3.4 · React 19 · MySQL 8 · MongoDB 7 · Redis 7 · Docker · JWT**
+
+- Modern alternative to IRCTC — handles train search, seat booking, PNR lookup, live tracking, and reviews
+- **Pessimistic locking** on `seat_availability` rows to prevent double-booking during Tatkal windows (10am–12pm)
+- **CNF/RAC/WL assignment** — automatic seat allocation with proper queue handling per class (SL, 3A, 2A, 1A)
+- **Multi-database architecture** — MySQL for transactional data, MongoDB for reviews & analytics, Redis for caching
+- **Stateless JWT auth** — access tokens in memory, refresh tokens in httpOnly cookies with Axios interceptor rotation
+- Flyway-managed schema (V1–V16) · Swagger UI · WebSocket live tracking · Razorpay payment integration
+
+---
+
 ### 🏪 Full-Stack General Store Management System
-> **Spring Boot 4 · React 19 · MySQL 8 · Spring Data JPA**
+> **Spring Boot · React 19 · MySQL 8 · Spring Data JPA**
 
 - Dual-frontend platform — Customer Storefront + Admin POS Dashboard
 - 12+ production features: live chat, coupon engine, product recommendations, wishlist, return requests, stock alerts, dark mode, CSV export
